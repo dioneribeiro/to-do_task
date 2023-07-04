@@ -1,0 +1,5 @@
+<%= form_with(model: task, id: 'input') do |form| %>
+  <%= form.text_field :name, class: 'form-control', required: true %>
+  <%= form.button :submit, class: 'submit-btn' %>
+
+<% end %>

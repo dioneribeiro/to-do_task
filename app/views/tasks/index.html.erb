@@ -1,0 +1,14 @@
+<div id="tasks">
+  <header>
+    <h2 id="date"><%= l Date.today %></h2>
+    <p id="task-count">
+      <%= @tasks.count %> tarefas
+    </p>
+    <%= render 'form', task: Task.new %>
+  </header>
+  <div id="list">
+    <% @tasks.each do |task| %>
+      <%= render task %>
+    <% end %>
+  </div>
+</div>
